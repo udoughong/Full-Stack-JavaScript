@@ -1,5 +1,5 @@
 // Refactoring
-// DRY it out better!
+// This is better!
 
 var html = '';
 var rgbColor;
