@@ -33,5 +33,5 @@ while ( guessCount < 5) {
 if (correctGuess) {
   document.write("<p>You guessed the correct number: " + randomNumber + " after " + guessCount + " guesses</p>"); 
 } else {
-  document.write("<p>Sorry, you're out of guesses :(");
+  document.write("<p>Sorry, you're out of guesses</p>");
 }
