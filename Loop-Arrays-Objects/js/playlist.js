@@ -1,26 +1,37 @@
+/* Two-Dimensional Arrays.
+
+1. Create a program that uses a two-dimensional array to hold songs and artists.
+
+2. Then displays the playlist of each song and the artist who recorded it.
+
+3. Print a list of song names and the artist for each song in the playlist.
+
+*/
+
+
 var playlist = [
-  'Mother', 
-  'She Rides', 
-  'Twist of Cain', 
-  '13'
+  ['Mother', 'Danzig'],
+  ['September', 'St Lucia'],
+  ['Midnight City', 'M83'],
+  ['Party Lites', 'Slave']
 ];
 
 function print(message) {
   document.write(message);
 }
 
-function printList(list) {
+function printSongs(songs) {
   var listHTML = '<ol>';
-  for ( var i = 0; i < list.length; i+=1 ) {
-    listHTML += '<li>' + list[i] + '</li>';
+  for ( var i = 0; i < songs.length; i+=1 ) {
+    listHTML += '<li>' + songs[i][0] + ' by ' + songs[i][1] + '</li>';
   }
   listHTML += '</ol>';
   print(listHTML);
 }
 
-printList(playlist);
+printSongs(playlist);
 
-// 1. Mother
-// 2. She Rides
-// 3. Twist of Cain
-// 4. 13
+// 1. Mother by Danzig
+// 2. September by St Lucia
+// 3. Midnight City by M83
+// 4. Party Lites by Slave
