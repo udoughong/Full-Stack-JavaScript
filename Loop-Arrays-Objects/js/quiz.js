@@ -16,11 +16,10 @@
 
 var questions = [
   ['When did Chelsea last win the English Premier League?', 2015],
-  ['When did Chelsea last win the Eufa Champions League?', 2012],
+  ['When did Chelsea last win the UEFA Champions League?', 2012],
   ['How many National Championships have the Nebraska Cornhuskers won?', 5],
   ['How many books make up the "Song of Ice and Fire" Series?', 5]
 ];
-
 var correctAnswers = 0;
 var question;
 var answer;
