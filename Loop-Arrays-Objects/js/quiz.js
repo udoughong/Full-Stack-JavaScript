@@ -15,10 +15,22 @@
 */
 
 var questions = [
-  ['When did Chelsea last win the English Premier League?', 2015],
-  ['When did Chelsea last win the UEFA Champions League?', 2012],
-  ['How many National Championships have the Nebraska Cornhuskers won?', 5],
-  ['How many books make up the "Song of Ice and Fire" Series?', 5]
+  {
+    question: 'When did Chelsea last win the English Premier League?', 
+    answer: 2015
+  },
+  {
+    question: 'When did Chelsea last win the UEFA Champions League?', 
+    answer: 2012
+  },
+  {
+    question: 'How many National Championships have the Nebraska Cornhuskers won?', 
+    answer: 5
+  },
+  {  
+    question: 'How many books make up the "Song of Ice and Fire" Series?', 
+    answer: 5
+  }
 ];
 var correctAnswers = 0;
 var question;
@@ -43,8 +55,8 @@ function buildList(arr) {
 }
 
 for ( var i = 0; i < questions.length; i += 1 ) {
-  question = questions[i][0];
-  answer = questions[i][1];
+  question = questions[i].question;
+  answer = questions[i].answer;
   response = parseInt(prompt(question));
   if ( response === answer ) {
     correctAnswers += 1;
