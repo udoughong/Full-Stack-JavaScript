@@ -5,4 +5,7 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore uploaded images.
-/public/uploads
+*.png
+*.jpg
+*.jpeg
+*.gif
