@@ -8,19 +8,27 @@ $("#menu").append($select);
 // Cycle over menu links - http://api.jquery.com/category/traversing/
 $("#menu a").each(function(){
   var $anchor = $(this);
+
   // Create an option.
   var $option = $("<option></option>");
+
+  // Highlight backgrounds of selected options (depending on current page).
+  if($anchor.parent().hasClass("selected")){
+    $option.prop("selected", true);
+  }
+
   // Option's value is the href.
   $option.val($anchor.attr("href"));
+
   // Option's text is the text of the link.
   $option.text($anchor.text());
+
   // Append option to select.
   $select.append($option);
 });
 
-// Create button.
-// Bind click to button.
+// Bind a change listener to select.
+$select.change(function(){
   // Go to the select's location.
-// Modify css to hide links on small widths and show button and select.
-// Also hide select and button on larger widths, while showing links.
-// Highlight backgrounds of selected options (depending on current page).
+  window.location = $select.val();
+});
